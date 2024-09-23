@@ -153,6 +153,7 @@ a {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3; /* Limitar a 3 líneas */
+  line-clamp: 3; /* Limitar a 3 líneas por compatibilidad */
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5; /* Ajustar la altura de línea */
