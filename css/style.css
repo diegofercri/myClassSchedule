@@ -1,0 +1,188 @@
+/* Fuente light */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/ceraPro/ceraPro-Medium.ttf');
+  font-weight: 100; /* Light weight */
+  font-style: light;
+}
+
+/* Fuente regular */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/ceraPro/ceraPro-Medium.ttf');
+  font-weight: 400; /* Medium weight */
+  font-style: normal;
+}
+
+/* Fuente bold */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/ceraPro/ceraPro-Bold.ttf');
+  font-weight: 700; /* Bold weight */
+  font-style: bold;
+}
+
+/* Fuente black */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/ceraPro/ceraPro-Black.ttf');
+  font-weight: 900; /* Black weight */
+  font-style: bolder;
+}
+
+/* Fuente italic */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/ceraPro/ceraPro-RegularItalic.ttf');
+  font-weight: 400; /* Regular weight pero en itálica */
+  font-style: italic;
+}
+
+/* Fuente italic */
+@font-face {
+  font-family: 'Cera Pro';
+  src: url('../fonts/ceraPro/ceraPro-BlackItalic.ttf');
+  font-weight: 900; /* Black weight pero en itálica */
+  font-style: italic;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cera Pro', sans-serif;
+}
+
+body {
+    min-width: fit-content;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+h1 {
+    font-size: 4em;
+    color: #000;
+}
+
+h2 {
+    font-size: 3em;
+    color: #000;
+}
+
+h3 {
+    font-size: 2em;
+    color: #000;
+}
+
+h4 {
+    font-size: 1.5em;
+    color: #000;
+}
+
+h5 {
+    font-size: 1em;
+    color: #000;
+}
+
+h6 {
+    font-size: 0.5em;
+    color: #000;
+}
+
+p {
+    font-size: 1em;
+    color: #000;
+}
+
+a {
+    font-size: 1em;
+    color: #888;
+    text-decoration: none;
+}
+
+.schedule-container {
+  display: flex;
+  gap: 12px;
+}
+
+.card-container-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 100px;
+  min-width: 200px;
+  max-height: 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  scale: 1.05;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-title {
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap; /* Evita saltos de línea */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.card-content {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limitar a 3 líneas */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5; /* Ajustar la altura de línea */
+  max-height: calc(1.5em * 3); /* Ajustar el alto máximo al número de líneas */
+}
+
+.psp {
+  background-color: #00e771;
+}
+
+.di {
+  background-color: #67ffde;
+}
+
+.ad {
+  background-color: #ffea31;
+}
+
+.eie {
+  background-color: #00b719;
+}
+
+.pmdm {
+  background-color: #4986e7;
+}
+
+.sge {
+  background-color: #ff8820;
+}
+
+.default {
+  background-color: #9b9b9b;
+}
